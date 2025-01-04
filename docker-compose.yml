@@ -1,16 +1,12 @@
 version: '3.8'
 
 services:
-  nginx:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx:/etc/nginx/conf.d
+  ionos.webserver.conf:
+    image: stevenb1996/ionos.webserver.conf:v1.0.0
     networks:
       - website.network
+    ports:
+      - "80:80"
 
   stevenberrisford.com:
     image: stevenb1996/stevenberrisford.com:v1.0.0
