@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   ionos.webserver.conf:
-    image: stevenb1996/ionos.webserver.conf:v1.0.4
+    image: stevenb1996/ionos.webserver.conf:v1.0.5
     networks:
       - website.network
     ports:
