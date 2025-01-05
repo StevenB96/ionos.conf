@@ -9,7 +9,7 @@ services:
       - "80:80"
 
   stevenberrisford:
-    image: stevenb1996/stevenberrisford.com:v1.0.4
+    image: stevenb1996/stevenberrisford.com:v1.0.5
     networks:
       - website.network
     expose:
