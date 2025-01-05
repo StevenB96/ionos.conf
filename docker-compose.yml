@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   ionos.webserver.conf:
-    image: stevenb1996/ionos.webserver.conf:v1.0.1
+    image: stevenb1996/ionos.webserver.conf:v1.0.2
     networks:
       - website.network
     ports:
       - "80:80"
 
   stevenberrisford.com:
-    image: stevenb1996/stevenberrisford.com:v1.0.1
+    image: stevenb1996/stevenberrisford.com:v1.0.2
     networks:
       - website.network
     expose:
